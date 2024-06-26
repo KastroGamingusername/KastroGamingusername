@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gra w zgadywanie liczb</title>
+    <title>Gra w klikanie</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Zgadnij liczbę!</h1>
-        <p>Wybierz liczbę od 1 do 100:</p>
-        <input type="number" id="guessInput" min="1" max="100">
-        <button onclick="checkGuess()">Zgadnij</button>
+        <h1>Gra w klikanie</h1>
+        <p>Kliknij w przycisk 100 000 razy!</p>
+        <button id="clickButton" onclick="incrementCounter()">Kliknij mnie!</button>
+        <p>Liczba kliknięć: <span id="clickCount">0</span></p>
         <p id="resultMessage"></p>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-
